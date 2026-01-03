@@ -1,0 +1,49 @@
+.features-container {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+  min-height: 100vh;
+}
+
+.features-title {
+  font-size: 42px;
+  margin-bottom: 40px;
+  color: #2a2a2a;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.feature-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.1);
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+/* 🔥 3D Hover Effect */
+.feature-card:hover {
+  transform: perspective(1000px) rotateX(8deg) rotateY(-8deg) scale(1.05);
+  box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
